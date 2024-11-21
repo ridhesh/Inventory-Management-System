@@ -1,0 +1,98 @@
+
+<nav class="navbar navbar-expand-sm bg-primary navbar-dark">
+  <!-- Links -->
+  <ul class="navbar-nav">
+    <li class="nav-item">
+      <a *ngIf="loginService.isUserLoggedIn()" routerLink="products" class="clickme info" routerLinkActive="active">Products List</a>
+    </li>
+
+    <li class="nav-item">
+      <a *ngIf="loginService.isUserLoggedIn()" routerLink="addproduct" class="clickme info" routerLinkActive="active">Add Product</a>
+    </li>
+
+    <li class="nav-item">
+      <a *ngIf="loginService.isUserLoggedIn()" routerLink="dealers" class="clickme info" routerLinkActive="active">Dealers Info</a>
+    </li>
+
+    <li class="nav-item">
+      <a *ngIf="!loginService.isUserLoggedIn()" routerLink="login" class="clickme info" routerLinkActive="active">Login</a>
+    </li>
+
+    <li class="nav-item">
+      <a *ngIf="!loginService.isUserLoggedIn()" routerLink="home" class="clickme info" routerLinkActive="active">Home</a>
+    </li>
+
+    <li class="nav-item">
+      <a *ngIf="!loginService.isUserLoggedIn()" routerLink="register" class="clickme info" routerLinkActive="active">Register</a>
+    </li>
+
+    <li class="nav-item">
+      <a *ngIf="loginService.isUserLoggedIn()" routerLink="logout" class="clickme info" routerLinkActive="active">Logout</a>
+    </li>
+  </ul>
+</nav>
+
+<div class="container">
+  
+  <div class="card">
+    <div class="card-body">
+      <router-outlet></router-outlet>  
+    </div>
+  </div>
+</div>
+<body>
+
+  <div class="footer">
+
+          <div class="box-footer fl">
+              <div class="ftext">
+                 <p class="coal">
+From The Blog</p>
+</div>
+<div class="post">
+                  <h4 class="post-t">
+Post title</h4>
+<p class="admin">
+<span>Admin</span>, rrann5896@</p>
+<p class="date">
+Friday, 10,march,2000</p>
+<p class="sintex">
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s .Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the.
+                  </p>
+<p class="read-more">
+Reade more »</p>
+</div>
+</div>
+<div class="box-footer mfl">
+             <div class="ftext">
+                 <p class="coal">
+Quick Links</p>
+<p class="quic-text">
+» Lorem ipsum dolor sit</p>
+<p class="quic-text">
+» Lorem ipsum dolor sit</p>
+<p class="quic-text">
+» Lorem ipsum dolor sit</p>
+<p class="quic-text">
+» Lorem ipsum dolor sit</p>
+<p class="quic-text">
+» Lorem ipsum dolor sit</p>
+<p class="quic-text">
+» Lorem ipsum dolor sit</p>
+</div>
+</div>
+<div class="box-footer mfl">
+             <div class="ftext">
+                 <p class="coal">
+From The Blog</p>
+<p class="reds">
+<span>@raviweb</span>  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s .
+                 </p>
+<p class="reds">
+<span>@raviweb</span> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s .
+                 </p>
+</div>
+</div>
+
+
+

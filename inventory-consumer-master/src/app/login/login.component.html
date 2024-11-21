@@ -1,0 +1,23 @@
+
+  <div class="container col-lg-4">
+    <h1 class="text-center" style="margin-top:60px;">LOGIN</h1>
+    <div class="card">
+      <div class="card-body">
+        <form class="form-group" style="margin-bottom: 20px;" ngNativeValidate>
+          <div class="alert alert-warning" *ngIf='invalidLogin'>{{errorMessage}}</div>
+          <div class="alert alert-success" *ngIf='loginSuccess'>{{successMessage}}</div>
+          <div class="form-group"style="margin-bottom: 30px;">
+            <label for="email" style="font-weight:700;margin-bottom: 10px;">Email Id :</label>
+            <input type="text" class="form-control" id="username" [(ngModel)]="username" placeholder="Enter User Name"
+              name="username" required style="margin-bottom:50px;">
+          </div>
+          <div class="form-group masthead" >
+            <label for="pwd" style="font-weight:700;margin-bottom: 10px;" ><a>Password</a></label>
+            <input type="password" class="form-control" [(ngModel)]="password" id="password" placeholder="Enter password"
+              name="password" required style="margin-bottom:30px;"> 
+          </div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <button (click)=checkLogin() class="btn btn-success" style="margin-bottom:10px;">Login</button>
+        </form>
+      </div>
+    </div>
+  </div>
